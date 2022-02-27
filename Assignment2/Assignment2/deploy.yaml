@@ -1,0 +1,37 @@
+# Important: YAML files are indentation sensitive. Do NOT change the indentation of the templates provided All indentations are in increments of 2 spaces.
+# YAML files require all field values to be in lowercase, can include numbers
+apiVersion: apps/v1
+#Specifies the kind of resource we are creating
+kind: #fill this
+
+#Metadata to identify the deployment in the cluster
+metadata:
+  name: #fill this
+
+#Specifications of the deployment
+spec:
+  #The number of replicas the deployment must have
+  replicas: #fill this
+
+  #Metadata to identify the replicaset in the cluster
+  selector:
+    matchLabels:
+      app: #fill this
+
+  template:
+    metadata:
+      labels:
+        app: #fill this
+
+    # Pod specs
+    spec:
+      containers:
+      - name: #fill this
+        image: #fill this
+        resources:
+          limits:
+            memory: "fill this"
+            cpu: "fill this"
+        ports:
+        - containerPort: #fill this
+
